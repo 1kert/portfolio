@@ -15,3 +15,9 @@ setTimeout(() => {
         }, i * 100);
     }
 }, 400);
+
+setTimeout(() => {
+    let doc = document.querySelector("#test");
+    doc.classList.remove("w-0");
+    doc.classList.add("w-[90%]");
+}, 1000);

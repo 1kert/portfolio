@@ -7,7 +7,7 @@
     <script src="app.js" defer></script>
     <title>Portfolio</title>
 </head>
-<body class="bg-gray-200 roboto">
+<body class="overflow-x-hidden bg-gray-200 roboto">
 
     <div class="flex justify-between w-screen mt-32 px-7">
         <div class="ml-20 mt-14">
@@ -16,11 +16,11 @@
         </div>
         <div class="w-[500px] flex flex-col gap-10 mr-24">
             <div class="w-full">
-                <h2 class="mb-4 text-2xl font-bold transition-all duration-500 fadein-right">ABOUT ME</h2>
+                <h2 class="mb-4 text-2xl font-bold tracking-wide transition-all duration-500 fadein-right">ABOUT ME</h2>
                 <p class="text-xl transition-all duration-500 fadein-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non inventore soluta optio nesciunt voluptatibus modi odit suscipit, debitis ratione aliquam.</p>
             </div>
             <div>
-                <h2 class="mb-4 text-2xl font-bold transition-all duration-500 fadein-right">MY WORK</h2>
+                <h2 class="mb-4 text-2xl font-bold tracking-wide transition-all duration-500 fadein-right">MY WORK</h2>
                 <p class="text-xl transition-all duration-500 fadein-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi maiores, sapiente culpa eveniet placeat deserunt praesentium dolorum ducimus. Nesciunt, dolor!</p>
             </div>
             <a href="https://github.com/1kert" class="transition-all duration-500 w-max fadein-right">
@@ -34,14 +34,19 @@
         </div>
     </div>
 
-    <div class="w-screen bg-[#DCDFE4] mt-40 flex flex-col items-center p-10 pt-20">
-        <h1 class="mb-20 text-6xl font-bold">MY SKILLS</h1>
-        <div class="flex justify-between w-full">
+    <div class="w-screen bg-[#DCDFE4] mt-40 flex flex-col items-center p-10 pt-40">
+        <h1 class="text-6xl font-bold tracking-wide mb-14">MY SKILLS</h1>
+        <p class="text-4xl w-[60%] mb-20 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, possimus corrupti quos maxime exercitationem voluptatum mollitia beatae deserunt magnam, amet nisi. Iusto nisi quod obcaecati maiores cum tenetur atque et!</p>
+        <div class="flex flex-col items-center w-full">
             <div class="flex flex-col gap-4 p-10 bg-[#C5CAD3] rounded-3xl">
                 <h1 class="mb-5 text-5xl font-bold">Programming Languages</h1>
-                <div class="flex items-center gap-5 ml-3">
+                <div class="flex items-center h-full gap-5 ml-3">
                     <img src="assets/images/icon-cs.webp" class="w-[50px] h-[55px]" alt="C#">
-                    <span class="text-3xl">Proficient</span>
+                    <div class="relative w-full h-[45px] rounded-3xl overflow-hidden">
+                        <span class="absolute text-3xl -translate-y-[50%] left-3 top-1/2 z-20">Proficient</span>
+                        <div id="test" class="absolute w-0 z-10 h-full bg-green-500 duration-500 transition-[width]"></div>
+                        <div class="w-full h-full bg-white"></div>
+                    </div>
                 </div>
                 <div class="flex items-center gap-5 ml-3">
                     <img src="assets/images/icon-cpp.webp" class="w-[50px] h-[55px]" alt="C++">
