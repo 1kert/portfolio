@@ -12,6 +12,15 @@
     @font-face {
         font-family: "roboto";
         src: url("assets/Roboto-Regular.ttf");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "roboto";;
+        src: url("assets/Roboto-Bold.ttf");
+        font-weight: bold;
+        font-style: normal;
     }
     
     .roboto{
