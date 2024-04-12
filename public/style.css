@@ -570,6 +570,14 @@ video {
   top: 50%;
 }
 
+.left-5 {
+  left: 1.25rem;
+}
+
+.left-4 {
+  left: 1rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -580,6 +588,10 @@ video {
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
 .mb-20 {
@@ -622,16 +634,16 @@ video {
   margin-top: 10rem;
 }
 
-.mb-14 {
-  margin-bottom: 3.5rem;
-}
-
 .flex {
   display: flex;
 }
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-\[45px\] {
+  height: 45px;
 }
 
 .h-\[50px\] {
@@ -646,20 +658,12 @@ video {
   height: 75px;
 }
 
-.h-\[90\%\] {
-  height: 90%;
-}
-
 .h-full {
   height: 100%;
 }
 
-.h-\[20px\] {
-  height: 20px;
-}
-
-.h-\[45px\] {
-  height: 45px;
+.w-0 {
+  width: 0px;
 }
 
 .w-10 {
@@ -672,6 +676,14 @@ video {
 
 .w-\[50px\] {
   width: 50px;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .w-full {
@@ -687,28 +699,24 @@ video {
   width: 100vw;
 }
 
-.w-\[90\%\] {
-  width: 90%;
+.w-\[55px\] {
+  width: 55px;
 }
 
-.w-0 {
-  width: 0px;
+.w-\[60px\] {
+  width: 60px;
 }
 
-.w-\[20px\] {
-  width: 20px;
+.w-\[66px\] {
+  width: 66px;
 }
 
-.w-\[200px\] {
-  width: 200px;
+.w-\[63px\] {
+  width: 63px;
 }
 
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[60\%\] {
-  width: 60%;
+.w-\[58px\] {
+  width: 58px;
 }
 
 .-translate-y-\[50\%\] {
@@ -769,11 +777,6 @@ video {
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
-.border-gray-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity));
-}
-
 .bg-\[\#C5CAD3\] {
   --tw-bg-opacity: 1;
   background-color: rgb(197 202 211 / var(--tw-bg-opacity));
@@ -810,18 +813,6 @@ video {
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-52 {
-  padding-top: 13rem;
-}
-
-.pt-60 {
-  padding-top: 15rem;
 }
 
 .pt-40 {
@@ -870,27 +861,19 @@ video {
   letter-spacing: 0.025em;
 }
 
-.tracking-wider {
-  letter-spacing: 0.05em;
-}
-
-.tracking-widest {
-  letter-spacing: 0.1em;
-}
-
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-.transition-all {
-  transition-property: all;
+.transition-\[width\] {
+  transition-property: width;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.transition-\[width\] {
-  transition-property: width;
+.transition-all {
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }

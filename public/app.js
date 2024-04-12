@@ -16,8 +16,15 @@ setTimeout(() => {
     }
 }, 400);
 
+
+let percentages = [
+    90, // c#
+    75, // c++
+    67, // c
+    55, // java
+    30, // python
+    40, // js
+];
 setTimeout(() => {
-    let doc = document.querySelector("#test");
-    doc.classList.remove("w-0");
-    doc.classList.add("w-[90%]");
+    let docs = document.querySelector("#test");
 }, 1000);
