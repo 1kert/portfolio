@@ -26,7 +26,21 @@ let percentages = [
     "w-[35%]", // python
 ];
 
-function setPercentages(){
+async function setPercentages(){
+    let langs = document.querySelectorAll("#prog-lang > div");
+
+    let timeouts = [];
+    langs.forEach((lang, i) => {
+        timeouts.push(new Promise(res => {
+            setTimeout(() => {
+                fadeIn(lang);
+                console.log(`bruh ${i + 1}`);
+                res();
+            }, (i + 1) * 90);
+        }));
+    });
+    await Promise.all(timeouts);
+    
     setTimeout(() => {
         let docs = document.querySelectorAll(".lang-skill");
         docs.forEach((x, i) => {
@@ -34,7 +48,7 @@ function setPercentages(){
                 x.classList.add(percentages[i]);
             }, i * 50);
         });
-    }, 650);
+    }, 400);
 }
 
 function fadeIn(elem, func = null){
@@ -47,7 +61,6 @@ let observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             fadeIn(entry.target);
-            console.log(`entry: ${entry}`);
             if(entry.target.id == "prog-lang") setPercentages();
             return;
         }
