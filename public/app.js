@@ -25,9 +25,35 @@ let percentages = [
     "w-[40%]", // js
     "w-[35%]", // python
 ];
-setTimeout(() => {
-    let docs = document.querySelectorAll(".lang-skill");
-    docs.forEach((x, i) => {
-        x.classList.add(percentages[i]);
-    });
-}, 1000);
+
+function setPercentages(){
+    setTimeout(() => {
+        let docs = document.querySelectorAll(".lang-skill");
+        docs.forEach((x, i) => {
+            setTimeout(() => {
+                x.classList.add(percentages[i]);
+            }, i * 50);
+        });
+    }, 650);
+}
+
+function fadeIn(elem, func = null){
+    elem.classList.remove("opacity-0");
+    elem.classList.remove("translate-y-[50%]");
+    if(func != null) func();
+}
+
+let observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            fadeIn(entry.target);
+            console.log(`entry: ${entry}`);
+            if(entry.target.id == "prog-lang") setPercentages();
+            return;
+        }
+    })
+});
+
+document.querySelectorAll(".fadein").forEach(x => {
+    observer.observe(x);
+});
