@@ -18,13 +18,16 @@ setTimeout(() => {
 
 
 let percentages = [
-    90, // c#
-    75, // c++
-    67, // c
-    55, // java
-    30, // python
-    40, // js
+    "w-[90%]", // c#
+    "w-[75%]", // c++
+    "w-[67%]", // c
+    "w-[55%]", // java
+    "w-[40%]", // js
+    "w-[35%]", // python
 ];
 setTimeout(() => {
-    let docs = document.querySelector("#test");
+    let docs = document.querySelectorAll(".lang-skill");
+    docs.forEach((x, i) => {
+        x.classList.add(percentages[i]);
+    });
 }, 1000);
