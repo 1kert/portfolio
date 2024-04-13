@@ -21,25 +21,25 @@ let percentages = [
     "w-[90%]", // c#
     "w-[70%]", // c++
     "w-[62%]", // c
-    "w-[50%]", // java
+    "w-[57%]", // java
     "w-[40%]", // js
     "w-[35%]", // python
 ];
 
 async function setPercentages(){
     let langs = document.querySelectorAll("#prog-lang > div");
-
-    let timeouts = [];
+    
+    let promise;
     langs.forEach((lang, i) => {
-        timeouts.push(new Promise(res => {
+        promise = new Promise(res => {
             setTimeout(() => {
                 fadeIn(lang);
                 console.log(`bruh ${i + 1}`);
                 res();
-            }, (i + 1) * 90);
-        }));
+            }, (i + 1) * 80);
+        });
     });
-    await Promise.all(timeouts);
+    await promise;
     
     setTimeout(() => {
         let docs = document.querySelectorAll(".lang-skill");
