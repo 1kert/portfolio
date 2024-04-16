@@ -34,7 +34,6 @@ async function setPercentages(){
         promise = new Promise(res => {
             setTimeout(() => {
                 fadeIn(lang);
-                console.log(`bruh ${i + 1}`);
                 res();
             }, (i + 1) * 80);
         });
